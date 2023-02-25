@@ -15,6 +15,7 @@ case `uname` in
   Darwin)
     # Commands for OS X go here
     antigen bundle osx
+    code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
   ;;
   Linux)
     # Commands for Linux go here

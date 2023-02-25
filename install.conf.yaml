@@ -15,6 +15,16 @@
     ~/Library/Fonts:
       if: '[ `uname` = Darwin ]'
       path: fonts/
+    ~/Library/Application\ Support/Code/User/:
+      if: '[ `uname` = Darwin ]'
+      path: vscode/
+    ~/.config/Code/User/:
+      if: '[ `uname` = Linux ]'
+      path: vscode/
 
 - shell:
   - [mkdir -p antigen && curl -L git.io/antigen > antigen/antigen.zsh, Installing Antigen]
+  - [export OS_TYPE=$(uname -s), Detecting OS]
+  - [echo $OS_TYPE, Detected OS. Installing...]
+  - [if [ $OS_TYPE == "Linux" ]; then setup/./linux.sh; fi]
+  - [if [ $OS_TYPE == "Darwin" ]; then setup/./mac.sh; fi]
