@@ -3,3 +3,4 @@ tap "homebrew/core"
 
 brew "nano"
 brew "coreutils"
+brew "git"
