@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc: 
+      path: shell/.zshrc
+    ~/.gitconfig: 
+      path: git/.gitconfig
+    ~/.local/share/fonts: 
+      if: '[ `uname` = Linux ]'
+      path: fonts/
+    ~/Library/Fonts:
+      if: '[ `uname` = Darwin ]'
+      path: fonts/
+
+- shell:
+  - [mkdir -p antigen && curl -L git.io/antigen > antigen/antigen.zsh, Installing Antigen]
