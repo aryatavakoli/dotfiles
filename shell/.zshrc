@@ -4,6 +4,9 @@ source $ZSH_BASE/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
+export EDITOR=nano
+export VISUAL="$EDITOR"
+
 # Plugins
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting

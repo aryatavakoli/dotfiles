@@ -15,12 +15,12 @@
     ~/Library/Fonts:
       if: '[ `uname` = Darwin ]'
       path: fonts/
-    ~/Library/Application\ Support/Code/User/:
+    ~/Library/Application\ Support/Code/User/settings.json:
       if: '[ `uname` = Darwin ]'
-      path: vscode/
-    ~/.config/Code/User/:
+      path: vscode/settings.json
+    ~/.config/Code/User/settings.json:
       if: '[ `uname` = Linux ]'
-      path: vscode/
+      path: vscode/settings.json
 
 - shell:
   - [mkdir -p antigen && curl -L git.io/antigen > antigen/antigen.zsh, Installing Antigen]
