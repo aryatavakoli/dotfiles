@@ -1,0 +1,7 @@
+{
+    "editor.minimap.enabled": false,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.inlineSuggest.enabled": true
+
+}
