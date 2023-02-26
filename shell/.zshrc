@@ -2,10 +2,12 @@ ZSH_BASE=$HOME/dotfiles
 
 source $ZSH_BASE/antigen/antigen.zsh
 
-antigen use oh-my-zsh
+for file in ~/.{path,exports,aliases,functions}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
-export EDITOR=nano
-export VISUAL="$EDITOR"
+antigen use oh-my-zsh
 
 # Plugins
 antigen bundle git

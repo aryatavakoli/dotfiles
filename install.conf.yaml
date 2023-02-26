@@ -7,6 +7,16 @@
 - link:
     ~/.zshrc: 
       path: shell/.zshrc
+    ~/.exports: 
+      path: shell/.exports
+    ~/.aliases:
+      path: shell/.aliases
+    ~/.functions:
+      path: shell/.functions
+    ~/.path:
+      path: shell/.path
+    ~/.editorconfig:
+      path: editor/.editorconfig
     ~/.gitconfig: 
       path: git/.gitconfig
     ~/.local/share/fonts: 
