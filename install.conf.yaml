@@ -37,7 +37,7 @@
 
 - shell:
   - 
-    command: chmod u+x setup/setup.sh && setup/./setup.sh
+    command: cd setup && chmod u+x setup.sh && ./setup.sh && cd-
     stdout: true
     stderr: true
     description: Running setup script
