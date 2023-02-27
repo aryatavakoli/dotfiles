@@ -22,6 +22,7 @@
     ~/.local/share/fonts: 
       if: '[ `uname` = Linux ]'
       path: fonts/
+      create: true
     ~/Library/Fonts:
       if: '[ `uname` = Darwin ]'
       path: fonts/
