@@ -1,14 +1,19 @@
-export OS_TYPE="$(uname -s)"
-
-echo $OS_TYPE
-
-if [ $OS_TYPE == "Linux" ]; then 
-    chmod u+x ./linux.sh 
-    sh ./linux.sh
-fi
-if [ $OS_TYPE == "Darwin" ]; then 
+case "$(uname -sr)" in
+   Darwin*)
+    echo 'Mac OS X'
     chmod u+x ./mac.sh 
     sh ./mac.sh
-fi
+    ;;
+
+   Linux*Microsoft*)
+    echo 'WSL'  # Windows Subsystem for Linux
+    ;;
+
+   Linux*)
+    echo 'Linux'
+    chmod u+x ./linux.sh 
+    sh ./linux.sh
+    ;;
+esac
 
 chsh -s /usr/bin/zsh
