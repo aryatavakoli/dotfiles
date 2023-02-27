@@ -41,5 +41,6 @@
     stdout: true
     stderr: true
     description: Running setup script
+  - [chsh -s /usr/bin/zsh, Changing shell to zsh]
   - [mkdir -p antigen && curl -L git.io/antigen > antigen/antigen.zsh, Installing Antigen]
 
