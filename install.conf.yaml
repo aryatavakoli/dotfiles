@@ -38,5 +38,5 @@
   - [mkdir -p antigen && curl -L git.io/antigen > antigen/antigen.zsh, Installing Antigen]
   - [export OS_TYPE=$(uname -s), Detecting OS]
   - [echo $OS_TYPE, Detected OS. Installing...]
-  - [if [ $OS_TYPE == "Linux" ]; then setup/./linux.sh; fi]
-  - [if [ $OS_TYPE == "Darwin" ]; then setup/./mac.sh; fi]
+  - [if [ $OS_TYPE == "Linux" ]; then setup/./linux.sh; fi, Setting up Linux]
+  - [if [ $OS_TYPE == "Darwin" ]; then setup/./mac.sh; fi, Setting up Mac]
