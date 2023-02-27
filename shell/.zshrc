@@ -27,6 +27,8 @@ case `uname` in
   ;;
 esac
 
+POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+
 antigen theme romkatv/powerlevel10k
 
 antigen apply
