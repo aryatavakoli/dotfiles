@@ -39,6 +39,7 @@
   - 
     command: chmod u+x setup/setup.sh && setup/./setup.sh
     stdout: true
+    stderr: true
     description: Running setup script
 
   - [mkdir -p antigen && curl -L git.io/antigen > antigen/antigen.zsh, Installing Antigen]
