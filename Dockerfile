@@ -27,4 +27,4 @@ ENV HOME /home/tester
 
 WORKDIR /home/tester/dotfiles
 # Run run.sh when the container launches
-ENTRYPOINT ["/bin/bash", "./install"]
+ENTRYPOINT ["/bin/bash", "./run.sh"]
