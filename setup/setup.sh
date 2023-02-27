@@ -1,8 +1,8 @@
 case "$(uname -sr)" in
    Darwin*)
     echo 'Mac OS X'
-    chmod u+x ./mac.sh 
-    sh ./mac.sh
+    chmod u+x mac.sh 
+    ./mac.sh
     ;;
 
    Linux*Microsoft*)
@@ -11,8 +11,8 @@ case "$(uname -sr)" in
 
    Linux*)
     echo 'Linux'
-    chmod u+x ./linux.sh 
-    sh ./linux.sh
+    chmod u+x linux.sh 
+    ./linux.sh
     ;;
 esac
 
