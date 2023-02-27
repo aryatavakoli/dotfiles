@@ -9,12 +9,12 @@ RUN apt dist-upgrade -f
 
 # Install nginx, php-fpm and supervisord from ubuntu repository
 
-RUN apt install git python3 pip curl zsh sudo -y
+RUN apt install git curl sudo python3 -y
 RUN rm -rf /var/lib/apt/lists/*
 RUN apt clean
 
 # Create test user and add to sudoers
-RUN useradd -m -s /bin/zsh tester
+RUN useradd -m -s /bin/bash tester
 RUN usermod -aG sudo tester
 RUN echo "tester   ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers
 
@@ -27,5 +27,4 @@ ENV HOME /home/tester
 
 WORKDIR /home/tester/dotfiles
 # Run run.sh when the container launches
-CMD ["/bin/bash", "./run.sh"]
-
+ENTRYPOINT ["/bin/bash", "./install"]
