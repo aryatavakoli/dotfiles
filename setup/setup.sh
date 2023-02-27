@@ -15,5 +15,3 @@ case "$(uname -sr)" in
     ./linux.sh
     ;;
 esac
-
-chsh -s /usr/bin/zsh
