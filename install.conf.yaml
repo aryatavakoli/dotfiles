@@ -7,6 +7,7 @@
 - link:
     ~/.zshrc: 
       path: shell/.zshrc
+      force: true
     ~/.exports: 
       path: shell/.exports
     ~/.aliases:
@@ -17,10 +18,12 @@
       path: shell/.path
     ~/.p10k.zsh:
       path: shell/.p10k.zsh
+      force: true
     ~/.editorconfig:
       path: editor/.editorconfig
     ~/.gitconfig: 
       path: git/.gitconfig
+      force: true
     ~/.local/share/fonts: 
       if: '[ `uname` = Linux ]'
       path: fonts/
