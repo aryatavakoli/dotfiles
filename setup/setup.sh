@@ -1,16 +1,18 @@
 case "$(uname -sr)" in
    Darwin*)
-    echo 'Mac OS X'
+    echo 'Mac OS X Detected'
     chmod u+x mac.sh 
     ./mac.sh
     ;;
 
-   Linux*Microsoft*)
-    echo 'WSL'  # Windows Subsystem for Linux
+   Linux*microsoft*)
+    echo 'WSL Detected'  # Windows Subsystem for Linux
+    chmod u+x wsl.sh 
+    ./wsl.sh
     ;;
 
    Linux*)
-    echo 'Linux'
+    echo 'Linux System Detected' 
     chmod u+x linux.sh 
     ./linux.sh
     ;;
