@@ -11,6 +11,11 @@ antigen use oh-my-zsh
 
 # Plugins
 antigen bundle git
+antigen bundle git aliases
+antigen bundle common-aliases
+antigen bundle docker
+antigen bundle python
+antigen bundle thefuck
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-autosuggestions
@@ -20,6 +25,7 @@ case `uname` in
   Darwin)
     # Commands for OS X go here
     antigen bundle osx
+    antigen bundle brew
     code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
   ;;
   Linux)
