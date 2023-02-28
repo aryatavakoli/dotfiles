@@ -14,9 +14,7 @@ antigen bundles <<EOBUNDLES
 command-not-found
 colored-man-pages
 magic-enter
-ssh-agent
 extract
-tmux
 git
 aliases
 common-aliases
