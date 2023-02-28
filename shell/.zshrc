@@ -10,21 +10,36 @@ unset file;
 antigen use oh-my-zsh
 
 # Plugins
-antigen bundle git
-antigen bundle git aliases
-antigen bundle common-aliases
-antigen bundle docker
-antigen bundle python
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
+antigen bundles <<EOBUNDLES
+command-not-found
+colored-man-pages
+magic-enter
+ssh-agent
+extract
+tmux
+git
+aliases
+common-aliases
+python
+docker docker-compose
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-history-substring-search
+HeroCC/LS_COLORS
+unixorn/autoupdate-antigen.zshplugin
+rupa/z
+EOBUNDLES
 
 case `uname` in
   Darwin)
     # Commands for OS X go here
     antigen bundle osx
     antigen bundle brew
+    antigen bundle aws
+    antigen bundle kubectl 
+    antigen bundle terraform
+    antigen bundle helm
     code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
   ;;
   Linux)
@@ -33,5 +48,6 @@ case `uname` in
 esac
 
 antigen theme romkatv/powerlevel10k
+source ~/.p10k.zsh
 
 antigen apply
