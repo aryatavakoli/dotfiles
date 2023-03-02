@@ -12,3 +12,5 @@ rm -f packages.microsoft.gpg
 sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code
+for EXT in $$(cat ../vscode/Codefile); do code --install-extension $$EXT; done
+
