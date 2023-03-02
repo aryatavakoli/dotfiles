@@ -1,16 +1,16 @@
 - defaults:
     link:
       relink: true
+      create: true
+      force: true
 
 - clean: ['~']
 
 - link:
     ~/.antigenrc:
       path: shell/.antigenrc
-      force: true
     ~/.zshrc: 
       path: shell/.zshrc
-      force: true
     ~/.exports: 
       path: shell/.exports
     ~/.aliases:
@@ -21,28 +21,22 @@
       path: shell/.path
     ~/.p10k.zsh:
       path: shell/.p10k.zsh
-      force: true
     ~/.editorconfig:
       path: editor/.editorconfig
     ~/.gitconfig: 
       path: git/.gitconfig
-      force: true
     ~/.local/share/fonts: 
       if: '[ `uname` = Linux ]'
       path: fonts/
-      create: true
     ~/Library/Fonts:
       if: '[ `uname` = Darwin ]'
       path: fonts/
     ~/Library/Application\ Support/Code/User/settings.json:
       if: '[ `uname` = Darwin ]'
       path: vscode/settings.json
-      create: true
     ~/.config/Code/User/settings.json:
       if: '[ `uname` = Linux ]'
       path: vscode/settings.json
-      create: true
-      force: true
 
 - shell:
   - 
