@@ -1,1 +1,7 @@
-# empty
+# Set PATH
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+
+# Add Visual Studio Code command to PATH on macOS
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+fi
