@@ -42,6 +42,7 @@
       if: '[ `uname` = Linux ]'
       path: vscode/settings.json
       create: true
+      force: true
 
 - shell:
   - 
