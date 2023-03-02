@@ -1,7 +1,7 @@
 sudo apt update
-sudo apt upgrade -y
-sudo apt dist-upgrade -f
+sudo apt full-upgrade -y
 sudo apt install zsh fonts-powerline -y
+sudo apt autoremove -y
 
 sudo apt-get install wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
