@@ -38,7 +38,6 @@ case `uname` in
     antigen bundle kubectl 
     antigen bundle terraform
     antigen bundle helm
-    code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
   ;;
   Linux)
     # Commands for Linux go here
