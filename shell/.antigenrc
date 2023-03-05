@@ -2,6 +2,7 @@ antigen use oh-my-zsh
 
 # Plugins
 antigen bundles <<EOBUNDLES
+ssh-agent
 command-not-found
 colored-man-pages
 magic-enter
