@@ -25,12 +25,6 @@
       path: editor/.editorconfig
     ~/.gitconfig: 
       path: git/.gitconfig
-    ~/.local/share/fonts: 
-      if: '[ `uname` = Linux ]'
-      path: fonts/
-    ~/Library/Fonts:
-      if: '[ `uname` = Darwin ]'
-      path: fonts/
     ~/Library/Application\ Support/Code/User/settings.json:
       if: '[ `uname` = Darwin ]'
       path: vscode/settings.json
