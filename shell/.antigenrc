@@ -28,7 +28,6 @@ case `uname` in
     antigen bundle aws
     antigen bundle kubectl 
     antigen bundle terraform
-    antigen bundle helm
   ;;
   Linux)
     antigen bundle HeroCC/LS_COLORS
