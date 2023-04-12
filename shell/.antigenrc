@@ -9,7 +9,6 @@ magic-enter
 extract
 git
 kubectl
-helm
 aliases
 common-aliases
 python
