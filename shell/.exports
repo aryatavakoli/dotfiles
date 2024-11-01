@@ -2,3 +2,5 @@ export PATH="$HOME/bin:$PATH";
 export EDITOR=nano
 export VISUAL="$EDITOR"
 export KUBECONFIG=~/.kube/config
+export TFENV_ARCH=amd64
+export GODEBUG=asyncpreemptoff=1
