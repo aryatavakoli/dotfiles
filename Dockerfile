@@ -7,8 +7,6 @@ RUN apt update
 RUN apt upgrade -y
 RUN apt dist-upgrade -f
 
-# Install nginx, php-fpm and supervisord from ubuntu repository
-
 RUN apt install git curl sudo python3 -y
 RUN rm -rf /var/lib/apt/lists/*
 RUN apt clean
