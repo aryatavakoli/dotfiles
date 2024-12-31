@@ -1,6 +1,5 @@
 alias ls='eza'
 alias cat='bat'
 alias curl='curlie'
-alias cd='z'
 alias terraform='tofu'
 alias dig='doggo'
