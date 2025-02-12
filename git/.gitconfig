@@ -69,7 +69,7 @@
 	autoSetupRemote = true
 [pull]
 
-    	rebase = true
+	rebase = true
 
 [init]
 
