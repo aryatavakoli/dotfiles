@@ -6,3 +6,5 @@ ms-vscode.codespaces
 ms-azuretools.vscode-docker
 ms-vscode-remote.remote-ssh
 redhat.vscode-yaml
+hashiCorp.terraform
+oderwat.indent-rainbow
