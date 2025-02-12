@@ -14,16 +14,31 @@
     "workbench.panel.defaultLocation": "right",
     "editor.bracketPairColorization.enabled": true,
     "editor.detectIndentation": false,
-    "editor.fontSize": 14,
+    "editor.fontSize": 13,
     "editor.guides.bracketPairs": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderControlCharacters": true,
-    "editor.rulers": [
-        80,
-        120
-    ],
     "editor.showFoldingControls": "always",
     "editor.snippetSuggestions": "top",
-    "explorer.confirmDelete": false
+    "redhat.telemetry.enabled": false,
+    "terraform.languageServer.tcp.port": 0,
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
+      },
+      "[terraform-vars]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
+      },
+      "git.autofetch": true,
+      "explorer.confirmDelete": false,
+      "terminal.integrated.defaultProfile.osx": "zsh",
+      "update.showReleaseNotes": false,
+      "git.ignoreRebaseWarning": true,
+      "aws.telemetry": false,
+      "explorer.confirmDragAndDrop": false,
+      "editor.renderWhitespace": "all",
 
 }
