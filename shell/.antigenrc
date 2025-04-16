@@ -18,7 +18,6 @@ common-aliases
 python
 kubectl
 terraform
-docker docker-compose
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-syntax-highlighting
@@ -35,6 +34,8 @@ case `uname` in
   Linux)
     antigen bundle HeroCC/LS_COLORS
     antigen bundle rupa/z
+    antigen bundle docker 
+    antigen bundle docker-compose
   ;;
 esac
 
