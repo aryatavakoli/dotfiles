@@ -25,12 +25,6 @@
       path: editor/.editorconfig
     ~/.gitconfig: 
       path: git/.gitconfig
-    ~/Library/Application\ Support/Code/User/settings.json:
-      if: '[ `uname` = Darwin ]'
-      path: vscode/settings.json
-    ~/.config/Code/User/settings.json:
-      if: '[ `uname` = Linux ]'
-      path: vscode/settings.json
 
 - shell:
   - 
