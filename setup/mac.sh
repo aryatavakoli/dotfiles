@@ -11,3 +11,4 @@ cd ~/Library/Fonts && {
     cd -; 
 }
 for EXT in $(cat ../vscode/Codefile); do code --install-extension $EXT; done
+cp ../vscode/settings.json ~/Library/Application\ Support/Code/User/
