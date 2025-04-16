@@ -14,3 +14,4 @@ rm -f packages.microsoft.gpg
 sudo apt update
 sudo apt install code
 for EXT in $(cat ../vscode/Codefile); do code --install-extension $EXT; done
+cp ../vscode/settings.json ~/.config/Code/User/
